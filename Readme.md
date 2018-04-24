@@ -1,5 +1,7 @@
 # Groovy Get-Source
 
+[![CircleCI](https://circleci.com/gh/MeneDev/groovy-get-source/tree/master.svg?style=svg)](https://circleci.com/gh/MeneDev/groovy-get-source/tree/master)
+
 This is a small AST transformation that allows you to get the source code of a Class at run-time.
 
 ## Example
