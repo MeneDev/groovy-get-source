@@ -25,7 +25,7 @@ repositories {
     maven { url 'https://jitpack.io' }
 }
 dependencies {
-    compile "org.codehaus.groovy:groovy-all:$groovyVersion"
+    compile 'com.github.MeneDev:groovy-get-source:96746d39f3'
 }
 ```
 
