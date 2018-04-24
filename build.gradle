@@ -1,0 +1,31 @@
+buildscript {
+    ext {
+        groovyVersion = '2.5.0-beta-2'
+    }
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+    }
+}
+
+group 'de.menedev.groovy'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'groovy'
+
+sourceCompatibility = 1.8
+
+compileJava.dependsOn(processResources)
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:$groovyVersion"
+    testCompile group: 'org.spockframework', name: 'spock-core', version: '1.1-groovy-2.4'
+}
