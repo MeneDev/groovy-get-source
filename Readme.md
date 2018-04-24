@@ -17,6 +17,18 @@ class AClass {
 }
 ```
 
+## Usage
+You can add a dependency to you build via jitpack.
+
+```groovy
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:$groovyVersion"
+}
+```
+
 ## Notes
 This was created as an answer to the question [Source code of current file in Groovy
 ](https://stackoverflow.com/questions/49997140/source-code-of-current-file-in-groovy) on Stackoverflow.
