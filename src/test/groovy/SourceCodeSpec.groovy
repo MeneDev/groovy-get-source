@@ -1,3 +1,5 @@
+import de.menedev.groovy.getsource.SaveSource
+import de.menedev.groovy.getsource.SourceCode
 import org.codehaus.groovy.control.CompilerConfiguration
 import org.codehaus.groovy.control.customizers.ImportCustomizer
 import spock.lang.Specification
@@ -6,7 +8,8 @@ class SourceCodeSpec extends Specification {
 
     def "non-empty Generator can create objects when @CompileStatic"() {
         given:
-        def script = """
+        def script = """import de.menedev.groovy.getsource.SaveSource
+import de.menedev.groovy.getsource.SourceCode
     @SaveSource
     class AClass {
 
