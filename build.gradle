@@ -26,6 +26,7 @@ sourceCompatibility = 1.8
 compileJava.dependsOn(processResources)
 
 dependencies {
-    compile "org.codehaus.groovy:groovy-all:$groovyVersion"
+    compileOnly "org.codehaus.groovy:groovy-all:$groovyVersion"
+    runtime "org.codehaus.groovy:groovy-all:2+"
     testCompile group: 'org.spockframework', name: 'spock-core', version: '1.1-groovy-2.4'
 }
